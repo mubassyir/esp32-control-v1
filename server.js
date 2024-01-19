@@ -11,13 +11,13 @@ app.get('/lamp1Status', (req, res) => {
 
   /*turn on*/
 app.get('/turnOnLamp1',(req,res)=>{
-    led1Status = "on"
+  lamp1Status = "on"
     res.json({lamp1:lamp1Status})
 });
 
   /*turn off*/
 app.get('/turnOffLamp1',(req,res)=>{
-    led1Status = "off"
+  lamp1Status = "off"
     res.json({lamp1:lamp1Status})
 });
 

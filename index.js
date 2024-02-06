@@ -7,6 +7,9 @@ var lamp2Status = "off";
 var lamp3Status = "off";
 var lamp4Status = "off";
 
+app.get('/',(req,res)=>{
+  res.json({message:"welcome to Express Js"})
+});
   /*get status*/
 app.get('/lampStatus', (req, res) => {
     res.json({
